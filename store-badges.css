@@ -1,0 +1,575 @@
+/* Store Badges CSS — auto-detects theme via prefers-color-scheme and language via :lang() */
+
+/* Default: English, light theme */
+.app-store-badge {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  background: url('https://klgleb.github.io/StoreBadges/apple_en_light.svg') no-repeat center/contain;
+}
+.google-play-badge {
+  display: inline-block;
+  width: 168px;
+  height: 50px;
+  background: url('https://klgleb.github.io/StoreBadges/google_en_light.svg') no-repeat center/contain;
+}
+
+/* Dark theme: English */
+@media (prefers-color-scheme: dark) {
+  .app-store-badge {
+    background-image: url('https://klgleb.github.io/StoreBadges/apple_en_dark.svg');
+  }
+  .google-play-badge {
+    background-image: url('https://klgleb.github.io/StoreBadges/google_en_dark.svg');
+  }
+}
+
+/* af */
+:lang(af) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_af_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(af) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_af_dark.svg'); }
+}
+
+/* ar */
+:lang(ar) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_ar_light.svg'); }
+:lang(ar) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_ar_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(ar) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_ar_dark.svg'); }
+  :lang(ar) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_ar_dark.svg'); }
+}
+
+/* az */
+:lang(az) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_az_light.svg'); }
+:lang(az) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_az_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(az) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_az_dark.svg'); }
+  :lang(az) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_az_dark.svg'); }
+}
+
+/* be */
+:lang(be) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_be_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(be) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_be_dark.svg'); }
+}
+
+/* bg */
+:lang(bg) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_bg_light.svg'); }
+:lang(bg) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_bg_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(bg) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_bg_dark.svg'); }
+  :lang(bg) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_bg_dark.svg'); }
+}
+
+/* bn */
+:lang(bn) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_bn_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(bn) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_bn_dark.svg'); }
+}
+
+/* bs */
+:lang(bs) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_bs_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(bs) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_bs_dark.svg'); }
+}
+
+/* ca */
+:lang(ca) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_ca_light.svg'); }
+:lang(ca) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_ca_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(ca) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_ca_dark.svg'); }
+  :lang(ca) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_ca_dark.svg'); }
+}
+
+/* cs */
+:lang(cs) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_cs_light.svg'); }
+:lang(cs) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_cs_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(cs) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_cs_dark.svg'); }
+  :lang(cs) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_cs_dark.svg'); }
+}
+
+/* da */
+:lang(da) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_da_light.svg'); }
+:lang(da) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_da_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(da) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_da_dark.svg'); }
+  :lang(da) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_da_dark.svg'); }
+}
+
+/* de */
+:lang(de) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_de_light.svg'); }
+:lang(de) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_de_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(de) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_de_dark.svg'); }
+  :lang(de) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_de_dark.svg'); }
+}
+
+/* el */
+:lang(el) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_el_light.svg'); }
+:lang(el) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_el_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(el) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_el_dark.svg'); }
+  :lang(el) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_el_dark.svg'); }
+}
+
+/* es */
+:lang(es) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_es_light.svg'); }
+:lang(es) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_es_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(es) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_es_dark.svg'); }
+  :lang(es) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_es_dark.svg'); }
+}
+
+/* es-la */
+:lang(es-la) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_es-la_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(es-la) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_es-la_dark.svg'); }
+}
+
+/* es-mx */
+:lang(es-mx) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_es-mx_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(es-mx) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_es-mx_dark.svg'); }
+}
+
+/* et */
+:lang(et) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_et_light.svg'); }
+:lang(et) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_et_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(et) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_et_dark.svg'); }
+  :lang(et) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_et_dark.svg'); }
+}
+
+/* eu */
+:lang(eu) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_eu_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(eu) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_eu_dark.svg'); }
+}
+
+/* fa */
+:lang(fa) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_fa_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(fa) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_fa_dark.svg'); }
+}
+
+/* fi */
+:lang(fi) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_fi_light.svg'); }
+:lang(fi) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_fi_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(fi) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_fi_dark.svg'); }
+  :lang(fi) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_fi_dark.svg'); }
+}
+
+/* fil */
+:lang(fil) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_fil_light.svg'); }
+:lang(fil) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_fil_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(fil) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_fil_dark.svg'); }
+  :lang(fil) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_fil_dark.svg'); }
+}
+
+/* fr */
+:lang(fr) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_fr_light.svg'); }
+:lang(fr) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_fr_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(fr) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_fr_dark.svg'); }
+  :lang(fr) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_fr_dark.svg'); }
+}
+
+/* fr-ca */
+:lang(fr-ca) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_fr-ca_light.svg'); }
+:lang(fr-ca) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_fr-ca_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(fr-ca) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_fr-ca_dark.svg'); }
+  :lang(fr-ca) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_fr-ca_dark.svg'); }
+}
+
+/* ga */
+:lang(ga) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_ga_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(ga) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_ga_dark.svg'); }
+}
+
+/* gl */
+:lang(gl) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_gl_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(gl) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_gl_dark.svg'); }
+}
+
+/* gu */
+:lang(gu) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_gu_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(gu) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_gu_dark.svg'); }
+}
+
+/* he */
+:lang(he) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_he_light.svg'); }
+:lang(he) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_he_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(he) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_he_dark.svg'); }
+  :lang(he) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_he_dark.svg'); }
+}
+
+/* he-il */
+:lang(he-il) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_he-il_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(he-il) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_he-il_dark.svg'); }
+}
+
+/* hi */
+:lang(hi) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_hi_light.svg'); }
+:lang(hi) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_hi_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(hi) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_hi_dark.svg'); }
+  :lang(hi) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_hi_dark.svg'); }
+}
+
+/* hr */
+:lang(hr) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_hr_light.svg'); }
+:lang(hr) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_hr_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(hr) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_hr_dark.svg'); }
+  :lang(hr) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_hr_dark.svg'); }
+}
+
+/* hu */
+:lang(hu) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_hu_light.svg'); }
+:lang(hu) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_hu_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(hu) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_hu_dark.svg'); }
+  :lang(hu) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_hu_dark.svg'); }
+}
+
+/* hy */
+:lang(hy) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_hy_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(hy) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_hy_dark.svg'); }
+}
+
+/* id */
+:lang(id) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_id_light.svg'); }
+:lang(id) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_id_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(id) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_id_dark.svg'); }
+  :lang(id) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_id_dark.svg'); }
+}
+
+/* is */
+:lang(is) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_is_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(is) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_is_dark.svg'); }
+}
+
+/* it */
+:lang(it) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_it_light.svg'); }
+:lang(it) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_it_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(it) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_it_dark.svg'); }
+  :lang(it) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_it_dark.svg'); }
+}
+
+/* ja */
+:lang(ja) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_ja_light.svg'); }
+:lang(ja) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_ja_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(ja) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_ja_dark.svg'); }
+  :lang(ja) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_ja_dark.svg'); }
+}
+
+/* ka */
+:lang(ka) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_ka_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(ka) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_ka_dark.svg'); }
+}
+
+/* kk */
+:lang(kk) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_kk_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(kk) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_kk_dark.svg'); }
+}
+
+/* km */
+:lang(km) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_km_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(km) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_km_dark.svg'); }
+}
+
+/* kn */
+:lang(kn) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_kn_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(kn) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_kn_dark.svg'); }
+}
+
+/* ko */
+:lang(ko) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_ko_light.svg'); }
+:lang(ko) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_ko_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(ko) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_ko_dark.svg'); }
+  :lang(ko) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_ko_dark.svg'); }
+}
+
+/* ky */
+:lang(ky) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_ky_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(ky) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_ky_dark.svg'); }
+}
+
+/* lo */
+:lang(lo) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_lo_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(lo) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_lo_dark.svg'); }
+}
+
+/* lt */
+:lang(lt) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_lt_light.svg'); }
+:lang(lt) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_lt_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(lt) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_lt_dark.svg'); }
+  :lang(lt) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_lt_dark.svg'); }
+}
+
+/* lv */
+:lang(lv) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_lv_light.svg'); }
+:lang(lv) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_lv_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(lv) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_lv_dark.svg'); }
+  :lang(lv) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_lv_dark.svg'); }
+}
+
+/* mk */
+:lang(mk) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_mk_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(mk) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_mk_dark.svg'); }
+}
+
+/* ml */
+:lang(ml) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_ml_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(ml) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_ml_dark.svg'); }
+}
+
+/* mn */
+:lang(mn) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_mn_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(mn) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_mn_dark.svg'); }
+}
+
+/* mr */
+:lang(mr) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_mr_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(mr) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_mr_dark.svg'); }
+}
+
+/* ms */
+:lang(ms) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_ms_light.svg'); }
+:lang(ms) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_ms_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(ms) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_ms_dark.svg'); }
+  :lang(ms) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_ms_dark.svg'); }
+}
+
+/* mt */
+:lang(mt) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_mt_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(mt) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_mt_dark.svg'); }
+}
+
+/* my */
+:lang(my) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_my_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(my) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_my_dark.svg'); }
+}
+
+/* ne */
+:lang(ne) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_ne_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(ne) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_ne_dark.svg'); }
+}
+
+/* nl */
+:lang(nl) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_nl_light.svg'); }
+:lang(nl) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_nl_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(nl) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_nl_dark.svg'); }
+  :lang(nl) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_nl_dark.svg'); }
+}
+
+/* no */
+:lang(no) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_no_light.svg'); }
+:lang(no) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_no_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(no) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_no_dark.svg'); }
+  :lang(no) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_no_dark.svg'); }
+}
+
+/* pa */
+:lang(pa) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_pa_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(pa) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_pa_dark.svg'); }
+}
+
+/* pl */
+:lang(pl) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_pl_light.svg'); }
+:lang(pl) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_pl_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(pl) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_pl_dark.svg'); }
+  :lang(pl) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_pl_dark.svg'); }
+}
+
+/* pt-br */
+:lang(pt-br) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_pt-br_light.svg'); }
+:lang(pt-br) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_pt-br_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(pt-br) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_pt-br_dark.svg'); }
+  :lang(pt-br) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_pt-br_dark.svg'); }
+}
+
+/* pt-pt */
+:lang(pt-pt) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_pt-pt_light.svg'); }
+:lang(pt-pt) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_pt-pt_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(pt-pt) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_pt-pt_dark.svg'); }
+  :lang(pt-pt) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_pt-pt_dark.svg'); }
+}
+
+/* ro */
+:lang(ro) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_ro_light.svg'); }
+:lang(ro) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_ro_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(ro) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_ro_dark.svg'); }
+  :lang(ro) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_ro_dark.svg'); }
+}
+
+/* ru */
+:lang(ru) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_ru_light.svg'); }
+:lang(ru) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_ru_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(ru) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_ru_dark.svg'); }
+  :lang(ru) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_ru_dark.svg'); }
+}
+
+/* si-lk */
+:lang(si-lk) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_si-lk_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(si-lk) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_si-lk_dark.svg'); }
+}
+
+/* sk */
+:lang(sk) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_sk_light.svg'); }
+:lang(sk) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_sk_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(sk) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_sk_dark.svg'); }
+  :lang(sk) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_sk_dark.svg'); }
+}
+
+/* sl */
+:lang(sl) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_sl_light.svg'); }
+:lang(sl) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_sl_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(sl) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_sl_dark.svg'); }
+  :lang(sl) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_sl_dark.svg'); }
+}
+
+/* sq */
+:lang(sq) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_sq_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(sq) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_sq_dark.svg'); }
+}
+
+/* sr */
+:lang(sr) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_sr_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(sr) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_sr_dark.svg'); }
+}
+
+/* sv */
+:lang(sv) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_sv_light.svg'); }
+:lang(sv) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_sv_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(sv) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_sv_dark.svg'); }
+  :lang(sv) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_sv_dark.svg'); }
+}
+
+/* sw */
+:lang(sw) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_sw_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(sw) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_sw_dark.svg'); }
+}
+
+/* ta */
+:lang(ta) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_ta_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(ta) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_ta_dark.svg'); }
+}
+
+/* te */
+:lang(te) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_te_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(te) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_te_dark.svg'); }
+}
+
+/* th */
+:lang(th) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_th_light.svg'); }
+:lang(th) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_th_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(th) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_th_dark.svg'); }
+  :lang(th) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_th_dark.svg'); }
+}
+
+/* tr */
+:lang(tr) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_tr_light.svg'); }
+:lang(tr) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_tr_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(tr) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_tr_dark.svg'); }
+  :lang(tr) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_tr_dark.svg'); }
+}
+
+/* uk */
+:lang(uk) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_uk_light.svg'); }
+:lang(uk) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_uk_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(uk) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_uk_dark.svg'); }
+  :lang(uk) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_uk_dark.svg'); }
+}
+
+/* ur */
+:lang(ur) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_ur_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(ur) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_ur_dark.svg'); }
+}
+
+/* uz */
+:lang(uz) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_uz_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(uz) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_uz_dark.svg'); }
+}
+
+/* vi */
+:lang(vi) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_vi_light.svg'); }
+:lang(vi) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_vi_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(vi) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_vi_dark.svg'); }
+  :lang(vi) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_vi_dark.svg'); }
+}
+
+/* zh-cn */
+:lang(zh-cn) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_zh-cn_light.svg'); }
+:lang(zh-cn) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_zh-cn_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(zh-cn) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_zh-cn_dark.svg'); }
+  :lang(zh-cn) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_zh-cn_dark.svg'); }
+}
+
+/* zh-tw */
+:lang(zh-tw) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_zh-tw_light.svg'); }
+:lang(zh-tw) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_zh-tw_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(zh-tw) .app-store-badge { background-image: url('https://klgleb.github.io/StoreBadges/apple_zh-tw_dark.svg'); }
+  :lang(zh-tw) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_zh-tw_dark.svg'); }
+}
+
+/* zu */
+:lang(zu) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_zu_light.svg'); }
+@media (prefers-color-scheme: dark) {
+  :lang(zu) .google-play-badge { background-image: url('https://klgleb.github.io/StoreBadges/google_zu_dark.svg'); }
+}

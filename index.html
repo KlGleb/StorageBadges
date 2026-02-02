@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store Badges API</title>
+  <link rel="stylesheet" href="store-badges.css">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      color: #222;
+      background: #fff;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { color: #eee; background: #1a1a1a; }
+      code { background: #333; }
+      select { background: #333; color: #eee; border-color: #555; }
+      h1, h2, h3 { color: #fff; }
+    }
+    h1 { margin-bottom: 0.5rem; }
+    p.subtitle { color: #666; margin-bottom: 2rem; }
+    section { margin-bottom: 2.5rem; }
+    h2 { margin-bottom: 1rem; border-bottom: 1px solid #ddd; padding-bottom: 0.5rem; }
+    h3 { margin: 1rem 0 0.5rem; }
+    .badges { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; margin: 1rem 0; }
+    code {
+      background: #f4f4f4;
+      padding: 0.15em 0.4em;
+      border-radius: 3px;
+      font-size: 0.9em;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 1rem;
+      border-radius: 6px;
+      overflow-x: auto;
+      margin: 0.5rem 0 1rem;
+      font-size: 0.85em;
+      line-height: 1.5;
+    }
+    @media (prefers-color-scheme: dark) {
+      pre { background: #2a2a2a; }
+    }
+    select {
+      padding: 0.4rem 0.6rem;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 0.9rem;
+      margin-right: 0.5rem;
+    }
+    label { margin-right: 0.25rem; }
+    .controls { margin-bottom: 1rem; }
+    #js-badges img {
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Store Badges API</h1>
+  <p class="subtitle">Localized App Store &amp; Google Play badges with automatic theme detection</p>
+
+  <section>
+    <h2>CSS Approach (pure CSS, no JS)</h2>
+    <p>Add <code>&lt;link rel="stylesheet" href="store-badges.css"&gt;</code> and use these classes. Theme switches automatically via <code>prefers-color-scheme</code>, language via the <code>lang</code> attribute on <code>&lt;html&gt;</code>.</p>
+    <div class="badges">
+      <a href="#" class="app-store-badge" role="img" aria-label="Download on the App Store"></a>
+      <a href="#" class="google-play-badge" role="img" aria-label="Get it on Google Play"></a>
+    </div>
+    <pre>&lt;a href="#" class="app-store-badge" role="img" aria-label="Download on the App Store"&gt;&lt;/a&gt;
+&lt;a href="#" class="google-play-badge" role="img" aria-label="Get it on Google Play"&gt;&lt;/a&gt;</pre>
+  </section>
+
+  <section>
+    <h2>JS Approach</h2>
+    <p>Add <code>&lt;script src="store-badges.js"&gt;&lt;/script&gt;</code> and call the functions. Language and theme are auto-detected if omitted.</p>
+    <div class="controls">
+      <label for="lang-select">Language:</label>
+      <select id="lang-select">
+        <option value="">Auto-detect</option>
+        <option value="en">en</option>
+        <option value="de">de</option>
+        <option value="fr">fr</option>
+        <option value="ja">ja</option>
+        <option value="ru">ru</option>
+        <option value="zh-cn">zh-cn</option>
+        <option value="ko">ko</option>
+        <option value="es">es</option>
+        <option value="ar">ar</option>
+        <option value="pt-br">pt-br</option>
+      </select>
+      <label for="theme-select">Theme:</label>
+      <select id="theme-select">
+        <option value="">Auto-detect</option>
+        <option value="light">light</option>
+        <option value="dark">dark</option>
+      </select>
+    </div>
+    <div id="js-badges" class="badges"></div>
+    <h3>URL output</h3>
+    <pre id="js-output"></pre>
+  </section>
+
+  <section>
+    <h2>Direct URL Scheme</h2>
+    <pre>https://klgleb.github.io/StoreBadges/apple_{lang}_{theme}.svg
+https://klgleb.github.io/StoreBadges/google_{lang}_{theme}.svg</pre>
+    <p>Where <code>{lang}</code> is an ISO code (<code>en</code>, <code>de</code>, <code>fr</code>, <code>zh-cn</code>, etc.) and <code>{theme}</code> is <code>dark</code> or <code>light</code>.</p>
+  </section>
+
+  <script src="store-badges.js"></script>
+  <script>
+    function updateBadges() {
+      var langVal = document.getElementById('lang-select').value;
+      var themeVal = document.getElementById('theme-select').value;
+      var opts = {};
+      if (langVal) opts.lang = langVal;
+      if (themeVal) opts.theme = themeVal;
+
+      var appleUrl = getOnAppStoreBadge(opts);
+      var googleUrl = getOnGooglePlayBadge(opts);
+
+      document.getElementById('js-badges').innerHTML =
+        '<a href="#"><img src="' + appleUrl + '" alt="Download on the App Store"></a>' +
+        '<a href="#"><img src="' + googleUrl + '" alt="Get it on Google Play"></a>';
+
+      document.getElementById('js-output').textContent =
+        'getOnAppStoreBadge(' + JSON.stringify(opts) + ')\n  → ' + appleUrl + '\n\n' +
+        'getOnGooglePlayBadge(' + JSON.stringify(opts) + ')\n  → ' + googleUrl;
+    }
+
+    document.getElementById('lang-select').addEventListener('change', updateBadges);
+    document.getElementById('theme-select').addEventListener('change', updateBadges);
+    updateBadges();
+  </script>
+</body>
+</html>
